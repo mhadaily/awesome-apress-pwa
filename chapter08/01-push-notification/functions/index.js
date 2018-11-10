@@ -24,27 +24,30 @@ const sendNotification = (noteId, subscriptions) => {
       title: 'WebPush: New Note',
       body: `Note ${noteId} has been synced!`,
       icon: 'https://placekitten.com/200/139',
-      badge: 'https://placekitten.com/50/50',
+      badge: 'https://placekitten.com/96/96',
+      image: 'https://placekitten.com/500/339',
       dir: 'ltr',
       lang: 'en',
+      timestamp: Date.now(),
       renotify: false,
       requireInteraction: false,
       silent: false,
-      tag: 'saveNote',
+      tag: 'save-note',
       vibrate: [100, 50, 100],
       data: {
         noteID: noteId,
-        dateOfArrival: Date.now(),
         primaryKey: 1
       },
       actions: [
         {
           action: 'open',
-          title: 'Open Note'
+          title: 'Open Note',
+          icon: 'https://placekitten.com/24/24'
         },
         {
           action: 'cancel',
-          title: 'Close'
+          title: 'Close',
+          icon: 'https://placekitten.com/24/24'
         }
       ]
     }
