@@ -107,7 +107,7 @@ export class DataService {
       .collection(this.USERS_COLLECTION)
       .doc(this.auth.id)
       .collection(this.SUBSCRIPTION_COLLECTION)
-      .add({ keys, endpoint, expirationTime });
+      .add({ keys, endpoint, expirationTime: expirationTime || null });
   }
 
   getNoteFromDirectApi(id): Observable<any> {
