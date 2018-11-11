@@ -69,7 +69,7 @@ export class DataService {
       updated_at: this.timestamp
     });
   }
-
+  notificationClicks
   saveNoteFromCloudFunction(
     note: Note
   ): Observable<{ success: boolean; data: Note }> {

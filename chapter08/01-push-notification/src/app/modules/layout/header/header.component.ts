@@ -43,11 +43,16 @@ export class HeaderComponent {
   handlePushNotificationClick({ action, notification }) {
     switch (action) {
       case 'open': {
-        this.router.navigate(['notes', notification.data.noteID]);
+        this.router.navigate(['notes', notification.data.noteID, { queryParams: { pushNotification: true } }]);
         break;
       }
       case 'cancel': {
         this.snackBar.dismiss();
+        break;
+      }
+      default: {
+        this.router.navigate(['notes', notification.data.noteID, { queryParams: { pushNotification: true } }]);
+        break;
       }
     }
   }
