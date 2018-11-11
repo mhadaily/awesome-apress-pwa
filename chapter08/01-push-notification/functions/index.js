@@ -28,7 +28,7 @@ const sendNotification = (noteId, subscriptions) => {
       image: 'https://placekitten.com/500/339',
       dir: 'ltr',
       lang: 'en',
-      timestamp: Date.now(),
+      timestamp: new Date().getTime(),
       renotify: false,
       requireInteraction: false,
       silent: false,
