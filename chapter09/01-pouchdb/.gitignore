@@ -40,4 +40,8 @@ testem.log
 Thumbs.db
 
 apress*/*
+_users/*
+_replicator/*
+pouch__all_dbs__/*
 
+log.txt
