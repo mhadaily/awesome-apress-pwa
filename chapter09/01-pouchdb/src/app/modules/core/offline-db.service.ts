@@ -37,6 +37,7 @@ export class OfflineDbService {
   }
 
   private onDBChange(change) {
+    console.log('>>>>>> DBChange', change);
     this.ngZone.run(() => {
       const index = this._allDocs.findIndex(row => row._id === change.id);
 
