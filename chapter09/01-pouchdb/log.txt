@@ -7481,3 +7481,34 @@
 [Sat, 24 Nov 2018 16:37:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/uA0IwsFDNQcq7gubQuL_XQ%3D%3D? 200
 [Sat, 24 Nov 2018 16:38:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=119&limit=100 200
 [Sat, 24 Nov 2018 16:38:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=119&limit=100 200
+[Sun, 25 Nov 2018 14:51:44 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Sun, 25 Nov 2018 14:51:44 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Sun, 25 Nov 2018 14:51:50 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sun, 25 Nov 2018 14:51:50 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 404
+[Sun, 25 Nov 2018 14:51:50 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/a4kIqGoGS6BKsT_FaIFj8g%3D%3D? 404
+[Sun, 25 Nov 2018 14:51:50 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/ 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D 201
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&since=0&limit=100 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - POST /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_revs_diff 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - POST /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_bulk_docs 201
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=0&limit=100 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/a4kIqGoGS6BKsT_FaIFj8g%3D%3D? 404
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/a4kIqGoGS6BKsT_FaIFj8g%3D%3D 201
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=1&limit=99 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 304
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D 201
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 200
+[Sun, 25 Nov 2018 14:51:52 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D 201
+[Sun, 25 Nov 2018 14:51:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=55&limit=46 200
+[Sun, 25 Nov 2018 14:51:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sun, 25 Nov 2018 14:51:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/a4kIqGoGS6BKsT_FaIFj8g%3D%3D? 200
+[Sun, 25 Nov 2018 14:51:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 200
+[Sun, 25 Nov 2018 14:51:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/ 200
+[Sun, 25 Nov 2018 14:51:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Sun, 25 Nov 2018 14:51:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&since=55&limit=100 200
+[Sun, 25 Nov 2018 14:51:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - POST /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_revs_diff 200
+[Sun, 25 Nov 2018 14:51:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/GRe9SXIIXmW7DfjRp7pvBQ%3D%3D? 304
+[Sun, 25 Nov 2018 14:51:57 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_local/a4kIqGoGS6BKsT_FaIFj8g%3D%3D? 304
+[Sun, 25 Nov 2018 14:51:58 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /apress_pwa_note__bqL5tguLbENi8flfmStznxIN2LA2/_changes?style=all_docs&feed=longpoll&heartbeat=10000&since=55&limit=100 200
