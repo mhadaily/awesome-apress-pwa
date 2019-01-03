@@ -29,7 +29,12 @@ export class WebUSBService {
       // for general purposes you can pass in the configuration and define configuration in component level
       // therefore you can simply get access to this service instance and can get call these methods with
       // different configuration.
-      const usbDeviceProperties = { name: 'Transcend Information, Inc.', vendorId: 0x8564 };
+      const usbDeviceProperties = {
+        // make sure you find your productId, SerialNumber or VendorId for your device,
+        // before testing this API. you must have a correct number for your device.
+        name: 'Transcend Information, Inc.',
+        vendorId: 0x8564
+      };
 
       const device = await navigator.usb.requestDevice({ filters: [usbDeviceProperties] });
       console.log(device);
