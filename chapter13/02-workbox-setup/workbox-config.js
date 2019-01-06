@@ -7,7 +7,7 @@ module.exports = {
     '**/*.css',
     '**/*.js'
   ],
-  globIgnores: ['stats.json', 'workbox-v3.6.3/**/*'],
+  globIgnores: ['stats.json'],
   globStrict: true,
   swDest: 'dist/sw.js',
   swSrc: 'src/sw-source.js',

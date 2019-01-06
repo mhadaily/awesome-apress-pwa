@@ -51,6 +51,10 @@ if (!workbox) {
           maxEntries: 10,
           maxAgeSeconds: 10 * 24 * 60 * 60 // 10 Days
         })
+        // new workbox.broadcastUpdate.Plugin('apis-updates', {
+        //By default, the Content-Length, ETag, and Last-Modified headers are compared.
+        //   headersToCheck: ['X-Custom-Header']
+        // })
       ]
     })
   );

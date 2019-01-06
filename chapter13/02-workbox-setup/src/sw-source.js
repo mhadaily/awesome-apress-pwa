@@ -11,8 +11,20 @@ if (!workbox) {
   // set module path prefix
   workbox.setConfig({ modulePathPrefix: MODULE_PATH_PREFIX });
 
+  // workbox.core.setCacheNameDetails({
+  //   prefix: 'angular-aprees-note-pwa',
+  //   suffix: 'v1',
+  //   precache: 'install-time',
+  //   runtime: 'run-time',
+  //   googleAnalytics: 'ga'
+  // });
+
+  // workbox.core.setLogLevel(workbox.core.LOG_LEVELS.debug);
+
   // Modify SW update cycle
+  // forces the waiting service worker to become the active service worker.
   workbox.skipWaiting();
+  // ensure that updates to the underlying service worker take effect immediately for both the current client and all other active clients.
   workbox.clientsClaim();
 
   /* PRE-CACHE STERATEGY */
@@ -25,26 +37,34 @@ if (!workbox) {
   // we need to store our images in cache on run-time
   workbox.routing.registerRoute(
     new RegExp('/(.*)assets(.*).(?:png|gif|jpg)/'),
+    // stale-while-revalidate for fonts
     workbox.strategies.cacheFirst({
       cacheName: 'images-cache',
       plugins: [
+        // set cache expiration restrictions to use in the strategy
         new workbox.expiration.Plugin({
+          // only cache 50 requests
           maxEntries: 50,
-          maxAgeSeconds: 30 * 24 * 60 * 60 // 30 Days
+          // only cache requests for 30 days
+          maxAgeSeconds: 30 * 24 * 60 * 60
         })
       ]
     })
   );
 
-  // first think first, we need to handle Google fonts
+  // we need to handle Google fonts
   workbox.routing.registerRoute(
     new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+    // stale-while-revalidate for fonts
     workbox.strategies.staleWhileRevalidate({
       cacheName: 'google-apis-cache',
       plugins: [
+        // set cache expiration restrictions to use in the strategy
         new workbox.expiration.Plugin({
+          // only cache 50 requests
           maxEntries: 10,
-          maxAgeSeconds: 10 * 24 * 60 * 60 // 10 Days
+          // only cache requests for 10 days
+          maxAgeSeconds: 10 * 24 * 60 * 60
         })
       ]
     })
