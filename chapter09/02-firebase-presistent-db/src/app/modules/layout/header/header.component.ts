@@ -26,14 +26,27 @@ export class HeaderComponent {
     private dataService: DataService,
     private router: Router
   ) {
+    // (<any>navigator).connection.addEventListener('change', this.onConnectionChange);
 
-    this.swPush.messages.subscribe((msg: { notification: object }) =>
-      this.handlePushMessage(msg)
+    this.swPush.messages.subscribe((msg: { notification: object }) => this.handlePushMessage(msg));
+
+    this.swPush.notificationClicks.subscribe(options => this.handlePushNotificationClick(options));
+  }
+
+  onConnectionChange() {
+    const { downlink, effectiveType, type } = (<any>navigator).connection;
+
+    console.log(`Effective network connection type: ${effectiveType}`);
+    console.log(`Downlink Speed/bandwidth estimate: ${downlink}Mb/s`);
+    console.log(
+      `type of connection is ${type} but could be of bluetooth, cellular, ethernet, none, wifi, wimax, other, unknown`
     );
 
-    this.swPush.notificationClicks.subscribe(options =>
-      this.handlePushNotificationClick(options)
-    );
+    if (/\slow-2g|2g|3g/.test((<any>navigator).connection.effectiveType)) {
+      this.snackBar.open(`You connection is slow!`);
+    } else {
+      this.snackBar.open(`Connection is fast!`);
+    }
   }
 
   handlePushMessage({ notification }) {
