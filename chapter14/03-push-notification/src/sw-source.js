@@ -147,7 +147,8 @@ if (!workbox) {
   // Receive push and show a notification
   self.onpush = event => {
     const { notification } = event.data.json();
-    self.registration.showNotification(notification.title, notification);
+    const promiseChain  = self.registration.showNotification(notification.title, notification);;
+    event.waitUntil(promiseChain);
   };
 
   // Custom notification actions
