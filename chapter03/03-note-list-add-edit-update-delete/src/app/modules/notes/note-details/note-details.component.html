@@ -9,7 +9,7 @@
         </mat-card-content>
     </mat-card>
 
-    <app-note-card *ngIf="!isEdit" [note]="note" [loading]="isDbLoading$ | async"></app-note-card>
+    <app-note-card *ngIf="!isEdit" [note]="note" [loading]="data.isLoading$ | async"></app-note-card>
 
     <button mat-raised-button color="accent" (click)="delete()"><mat-icon>delete</mat-icon></button>
     <button mat-raised-button color="primary" (click)="edit()"><mat-icon>edit</mat-icon></button>
