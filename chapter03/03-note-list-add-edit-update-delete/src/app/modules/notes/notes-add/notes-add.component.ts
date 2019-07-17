@@ -24,7 +24,7 @@ export class NotesAddComponent {
       .addNote(values)
       .then(doc => {
         this.router.navigate(["/notes"]);
-        this.snackBar.open(`Note ${doc.id} has been succeffully saved`);
+        this.snackBar.open(`Note ${doc.id} has been successfully saved`);
       })
       .catch(e => {
         this.errorMessages$.next("something is wrong when adding to DB");
