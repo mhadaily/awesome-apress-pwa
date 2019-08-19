@@ -90,7 +90,7 @@ export class DataService {
           }
         );
       }),
-      map(notes => this.transfromNote(notes))
+      map(notes => this.transformNote(notes))
     );
   }
 
@@ -142,18 +142,18 @@ export class DataService {
         );
       }),
       map((data: { documents: { fields: {} }[] }) => data.documents),
-      map(notes => this.transfromNotes(notes)),
+      map(notes => this.transformNotes(notes)),
       tap(notes => {
         this.isLoading$.next(false);
       })
     );
   }
 
-  private transfromNotes(notes) {
-    return notes.map(note => this.transfromNote(note));
+  private transformNotes(notes) {
+    return notes.map(note => this.transformNote(note));
   }
 
-  private transfromNote(note) {
+  private transformNote(note) {
     const _note = {};
     _note['id'] = note.name.split('/').reverse()[0];
     for (const prop in note.fields) {
