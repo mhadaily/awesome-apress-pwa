@@ -11,6 +11,7 @@ import { Subject } from "rxjs";
 })
 export class NoteDetailsComponent implements OnInit {
   public errorMessages$ = new Subject();
+  public isDbLoading$;
   public note$;
   public isEdit;
 
@@ -27,6 +28,7 @@ export class NoteDetailsComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get("id");
     this.id = id;
     this.note$ = this.data.getNote(id);
+    this.isDbLoading$ = this.data.isLoading$;
   }
 
   delete() {
