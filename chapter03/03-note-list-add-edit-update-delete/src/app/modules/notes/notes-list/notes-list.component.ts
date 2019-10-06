@@ -5,7 +5,7 @@ import { Observable, Subject, Subscription } from "rxjs";
 interface Note {
   key: string;
   title: string;
-  contnet: string;
+  content: string;
   date: string;
 }
 
